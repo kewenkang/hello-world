@@ -21,7 +21,6 @@ git reset --hard HEAD^(或头指针)
 合并某分支到当前分支：git merge <name>
 
 删除分支：git branch -d <name>
-文字添加到k1
-文字2添加到k1
+
 文字添加到k2
 文字2添加到k2
