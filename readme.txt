@@ -25,3 +25,4 @@ git reset --hard HEAD^(或头指针)
 文字2添加到k1
 文字添加到k2
 文字2添加到k2
+123 to k1
