@@ -22,3 +22,4 @@ git reset --hard HEAD^(或头指针)
 
 删除分支：git branch -d <name>
 文字添加到k1
+文字2添加到k1
