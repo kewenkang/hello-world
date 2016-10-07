@@ -63,3 +63,5 @@ git tag -s(私钥签名) <tagname> -m "blablabla..."可以用PGP签名标签；
 别名git config --global alias.co checkout
 git config --global alias.last 'log -1'
 当前用户的Git配置文件放在用户主目录下的一个隐藏文件.gitconfig中
+
+git fetch origin从远端的源仓库更新到本地的代码仓库
