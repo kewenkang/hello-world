@@ -1,67 +1,69 @@
-cd ..         //ÍË»Øµ½ÉÏ²ãÎÄ¼ş
-cd D:/ ÊÔÊÔ
-ll            //²é¿´ËùÓĞÎÄ¼ş
-cd ÊÔÊÔ       //½øÈë¡°ÊÔÊÔ¡±ÎÄ¼ş¼Ğ
+cd ..         //é€€å›åˆ°ä¸Šå±‚æ–‡ä»¶
+cd D:/ è¯•è¯•
+ll            //æŸ¥çœ‹æ‰€æœ‰æ–‡ä»¶
+cd è¯•è¯•       //è¿›å…¥â€œè¯•è¯•â€æ–‡ä»¶å¤¹
 git init      //
 git add readme.txt
 git commit -m "statement"
 git status
 git diff 
-git diff HEAD --readme.txt      //²é¿´¹¤×÷ÇøºÍ°æ±¾¿âÀïÃæ×îĞÂ°æ±¾µÄÇø±ğ
-git checkout -- readme.txt      //°Ñreadme.txtÎÄ¼şÔÚ¹¤×÷ÇøµÄĞŞ¸ÄÈ«²¿³·Ïú£¬³·Ïúµ½Ôİ´æÇøÀïµÄ×´Ì¬
-git reset HEAD file             //¿ÉÒÔ°ÑÔİ´æÇøµÄĞŞ¸Ä³·Ïúµô
-rm test.txt                     //´Ó¹¤×÷ÇøÖĞÉ¾³ı¸ÃÎÄ¼ş
-git rm test.txt                 //´Ó°æ±¾¿âÖĞÉ¾³ı¸ÃÎÄ¼ş(É¾³ı¿ÉÓÃcheckout»Ö¸´)
-git log (--pretty=oneline)      //²é¿´ÀúÊ·¼ÇÂ¼
-git reflog                      //²é¿´ËùÓĞĞŞ¸Ä¼ÇÂ¼
-git reset --hard HEAD^(»òÍ·Ö¸Õë)
+git diff HEAD --readme.txt      //æŸ¥çœ‹å·¥ä½œåŒºå’Œç‰ˆæœ¬åº“é‡Œé¢æœ€æ–°ç‰ˆæœ¬çš„åŒºåˆ«
+git checkout -- readme.txt      //æŠŠreadme.txtæ–‡ä»¶åœ¨å·¥ä½œåŒºçš„ä¿®æ”¹å…¨éƒ¨æ’¤é”€ï¼Œæ’¤é”€åˆ°æš‚å­˜åŒºé‡Œçš„çŠ¶æ€
+git reset HEAD file             //å¯ä»¥æŠŠæš‚å­˜åŒºçš„ä¿®æ”¹æ’¤é”€æ‰
+rm test.txt                     //ä»å·¥ä½œåŒºä¸­åˆ é™¤è¯¥æ–‡ä»¶
+git rm test.txt                 //ä»ç‰ˆæœ¬åº“ä¸­åˆ é™¤è¯¥æ–‡ä»¶(åˆ é™¤å¯ç”¨checkoutæ¢å¤)
+git log (--pretty=oneline)      //æŸ¥çœ‹å†å²è®°å½•
+git reflog                      //æŸ¥çœ‹æ‰€æœ‰ä¿®æ”¹è®°å½•
+git reset --hard HEAD^(æˆ–å¤´æŒ‡é’ˆ)
 
 
-²é¿´·ÖÖ§£ºgit branch
-´´½¨·ÖÖ§£ºgit branch <name>
-ÇĞ»»·ÖÖ§£ºgit checkout <name>
-´´½¨+ÇĞ»»·ÖÖ§£ºgit checkout -b <name>
-ºÏ²¢Ä³·ÖÖ§µ½µ±Ç°·ÖÖ§£ºgit merge <name>
-git merge --no-ff dev           //Fast forwardÄ£Ê½É¾³ı·ÖÖ§ºó»á¶ªµô·ÖÖ§ĞÅÏ¢
-É¾³ı·ÖÖ§£ºgit branch -d <name>
-É¾³ıÎ´ºÏ²¢µÄ·ÖÖ§£ºgit branch -D <name>
+æŸ¥çœ‹åˆ†æ”¯ï¼šgit branch
+åˆ›å»ºåˆ†æ”¯ï¼šgit branch <name>
+åˆ‡æ¢åˆ†æ”¯ï¼šgit checkout <name>
+åˆ›å»º+åˆ‡æ¢åˆ†æ”¯ï¼šgit checkout -b <name>
+åˆå¹¶æŸåˆ†æ”¯åˆ°å½“å‰åˆ†æ”¯ï¼šgit merge <name>
+git merge --no-ff dev           //Fast forwardæ¨¡å¼åˆ é™¤åˆ†æ”¯åä¼šä¸¢æ‰åˆ†æ”¯ä¿¡æ¯
+åˆ é™¤åˆ†æ”¯ï¼šgit branch -d <name>
+åˆ é™¤æœªåˆå¹¶çš„åˆ†æ”¯ï¼šgit branch -D <name>
 
-Òª¹ØÁªÒ»¸öÔ¶³Ì¿â£¬Ê¹ÓÃÃüÁîgit remote add origin git@server-name(github.com):path(kewenkang)/repo-name.git£»
-¹ØÁªºó£¬Ê¹ÓÃÃüÁîgit push -u origin masterµÚÒ»´ÎÍÆËÍmaster·ÖÖ§µÄËùÓĞÄÚÈİ£»
-´Ëºó£¬Ã¿´Î±¾µØÌá½»ºó£¬Ö»ÒªÓĞ±ØÒª£¬¾Í¿ÉÒÔÊ¹ÓÃÃüÁîgit push origin masterÍÆËÍ×îĞÂĞŞ¸Ä
+è¦å…³è”ä¸€ä¸ªè¿œç¨‹åº“ï¼Œä½¿ç”¨å‘½ä»¤git remote add origin git@server-name(github.com):path(kewenkang)/repo-name.gitï¼›
+å…³è”åï¼Œä½¿ç”¨å‘½ä»¤git push -u origin masterç¬¬ä¸€æ¬¡æ¨é€masteråˆ†æ”¯çš„æ‰€æœ‰å†…å®¹ï¼›
+æ­¤åï¼Œæ¯æ¬¡æœ¬åœ°æäº¤åï¼Œåªè¦æœ‰å¿…è¦ï¼Œå°±å¯ä»¥ä½¿ç”¨å‘½ä»¤git push origin masteræ¨é€æœ€æ–°ä¿®æ”¹
 
-Òª¿ËÂ¡Ò»¸ö²Ö¿â£¬Ê×ÏÈ±ØĞëÖªµÀ²Ö¿âµÄµØÖ·£¬È»ºóÊ¹ÓÃgit clone address(git@github.com:michaelliao/gitskills.git»òhttps://github.com/michaelliao/gitskills.git) ÃüÁî¿ËÂ¡¡£
-GitÖ§³Ö¶àÖÖĞ­Òé£¬°üÀ¨https£¬µ«Í¨¹ısshÖ§³ÖµÄÔ­ÉúgitĞ­ÒéËÙ¶È×î¿ì
+è¦å…‹éš†ä¸€ä¸ªä»“åº“ï¼Œé¦–å…ˆå¿…é¡»çŸ¥é“ä»“åº“çš„åœ°å€ï¼Œç„¶åä½¿ç”¨git clone address(git@github.com:michaelliao/gitskills.gitæˆ–https://github.com/michaelliao/gitskills.git) å‘½ä»¤å…‹éš†ã€‚
+Gitæ”¯æŒå¤šç§åè®®ï¼ŒåŒ…æ‹¬httpsï¼Œä½†é€šè¿‡sshæ”¯æŒçš„åŸç”Ÿgitåè®®é€Ÿåº¦æœ€å¿«
 
-µ±GitÎŞ·¨×Ô¶¯ºÏ²¢·ÖÖ§Ê±£¬¾Í±ØĞëÊ×ÏÈ½â¾ö³åÍ»¡£½â¾ö³åÍ»ºó£¬ÔÙÌá½»£¬ºÏ²¢Íê³É¡£
-ÓÃgit log --graph(git log --graph --pretty=oneline --abbrev-commit)ÃüÁî¿ÉÒÔ¿´µ½·ÖÖ§ºÏ²¢Í¼
+å½“Gitæ— æ³•è‡ªåŠ¨åˆå¹¶åˆ†æ”¯æ—¶ï¼Œå°±å¿…é¡»é¦–å…ˆè§£å†³å†²çªã€‚è§£å†³å†²çªåï¼Œå†æäº¤ï¼Œåˆå¹¶å®Œæˆã€‚
+ç”¨git log --graph(git log --graph --pretty=oneline --abbrev-commit)å‘½ä»¤å¯ä»¥çœ‹åˆ°åˆ†æ”¯åˆå¹¶å›¾
 
-µ±ÊÖÍ·¹¤×÷Ã»ÓĞÍê³ÉÊ±£¬ÏÈ°Ñ¹¤×÷ÏÖ³¡git stashÒ»ÏÂ£¬È»ºóÈ¥ĞŞ¸´bug£¬ĞŞ¸´ºó£¬ÔÙgit stash pop(=git stash apply + git stash drop)£¬»Øµ½¹¤×÷ÏÖ³¡
-²é¿´´¢´æĞÅÏ¢ÓÃgit stash list
+å½“æ‰‹å¤´å·¥ä½œæ²¡æœ‰å®Œæˆæ—¶ï¼Œå…ˆæŠŠå·¥ä½œç°åœºgit stashä¸€ä¸‹ï¼Œç„¶åå»ä¿®å¤bugï¼Œä¿®å¤åï¼Œå†git stash pop(=git stash apply + git stash drop)ï¼Œå›åˆ°å·¥ä½œç°åœº
+æŸ¥çœ‹å‚¨å­˜ä¿¡æ¯ç”¨git stash list
 
-²é¿´Ô¶³Ì¿âĞÅÏ¢£¬Ê¹ÓÃgit remote -v£»
-±¾µØĞÂ½¨µÄ·ÖÖ§Èç¹û²»ÍÆËÍµ½Ô¶³Ì£¬¶ÔÆäËûÈË¾ÍÊÇ²»¿É¼ûµÄ£»
-´Ó±¾µØÍÆËÍ·ÖÖ§£¬Ê¹ÓÃgit push origin branch-name£¬Èç¹ûÍÆËÍÊ§°Ü£¬ÏÈÓÃgit pull×¥È¡Ô¶³ÌµÄĞÂÌá½»£»
-ÔÚ±¾µØ´´½¨ºÍÔ¶³Ì·ÖÖ§¶ÔÓ¦µÄ·ÖÖ§£¬Ê¹ÓÃgit checkout -b branch-name origin/branch-name£¬±¾µØºÍÔ¶³Ì·ÖÖ§µÄÃû³Æ×îºÃÒ»ÖÂ£»
-½¨Á¢±¾µØ·ÖÖ§ºÍÔ¶³Ì·ÖÖ§µÄ¹ØÁª£¬Ê¹ÓÃgit branch --set-upstream branch-name origin/branch-name£»
-´ÓÔ¶³Ì×¥È¡·ÖÖ§£¬Ê¹ÓÃgit pull£¬Èç¹ûÓĞ³åÍ»£¬ÒªÏÈ´¦Àí³åÍ»¡£
+æŸ¥çœ‹è¿œç¨‹åº“ä¿¡æ¯ï¼Œä½¿ç”¨git remote -vï¼›
+æœ¬åœ°æ–°å»ºçš„åˆ†æ”¯å¦‚æœä¸æ¨é€åˆ°è¿œç¨‹ï¼Œå¯¹å…¶ä»–äººå°±æ˜¯ä¸å¯è§çš„ï¼›
+ä»æœ¬åœ°æ¨é€åˆ†æ”¯ï¼Œä½¿ç”¨git push origin branch-nameï¼Œå¦‚æœæ¨é€å¤±è´¥ï¼Œå…ˆç”¨git pullæŠ“å–è¿œç¨‹çš„æ–°æäº¤ï¼›
+åœ¨æœ¬åœ°åˆ›å»ºå’Œè¿œç¨‹åˆ†æ”¯å¯¹åº”çš„åˆ†æ”¯ï¼Œä½¿ç”¨git checkout -b branch-name origin/branch-nameï¼Œæœ¬åœ°å’Œè¿œç¨‹åˆ†æ”¯çš„åç§°æœ€å¥½ä¸€è‡´ï¼›
+å»ºç«‹æœ¬åœ°åˆ†æ”¯å’Œè¿œç¨‹åˆ†æ”¯çš„å…³è”ï¼Œä½¿ç”¨git branch --set-upstream branch-name origin/branch-nameï¼›
+ä»è¿œç¨‹æŠ“å–åˆ†æ”¯ï¼Œä½¿ç”¨git pullï¼Œå¦‚æœæœ‰å†²çªï¼Œè¦å…ˆå¤„ç†å†²çªã€‚
 
-ÃüÁîgit tag <name>ÓÃÓÚĞÂ½¨Ò»¸ö±êÇ©£¬Ä¬ÈÏÎªHEAD£¬Ò²¿ÉÒÔÖ¸¶¨Ò»¸öcommit id(Ö±½Ó¼ÓÔÚºóÃæ)£»
-git tag -a <tagname> -m "blablabla..."¿ÉÒÔÖ¸¶¨±êÇ©ĞÅÏ¢£»
-git tag -s(Ë½Ô¿Ç©Ãû) <tagname> -m "blablabla..."¿ÉÒÔÓÃPGPÇ©Ãû±êÇ©£»
-ÃüÁîgit tag¿ÉÒÔ²é¿´ËùÓĞ±êÇ©£»ÓÃÃüÁîgit show <tagname>¿ÉÒÔ¿´µ½ËµÃ÷ÎÄ×Ö¡£
+å‘½ä»¤git tag <name>ç”¨äºæ–°å»ºä¸€ä¸ªæ ‡ç­¾ï¼Œé»˜è®¤ä¸ºHEADï¼Œä¹Ÿå¯ä»¥æŒ‡å®šä¸€ä¸ªcommit id(ç›´æ¥åŠ åœ¨åé¢)ï¼›
+git tag -a <tagname> -m "blablabla..."å¯ä»¥æŒ‡å®šæ ‡ç­¾ä¿¡æ¯ï¼›
+git tag -s(ç§é’¥ç­¾å) <tagname> -m "blablabla..."å¯ä»¥ç”¨PGPç­¾åæ ‡ç­¾ï¼›
+å‘½ä»¤git tagå¯ä»¥æŸ¥çœ‹æ‰€æœ‰æ ‡ç­¾ï¼›ç”¨å‘½ä»¤git show <tagname>å¯ä»¥çœ‹åˆ°è¯´æ˜æ–‡å­—ã€‚
 
-ÃüÁîgit push origin <tagname>¿ÉÒÔÍÆËÍÒ»¸ö±¾µØ±êÇ©£»
-ÃüÁîgit push origin --tags¿ÉÒÔÍÆËÍÈ«²¿Î´ÍÆËÍ¹ıµÄ±¾µØ±êÇ©£»
-ÃüÁîgit tag -d <tagname>¿ÉÒÔÉ¾³ıÒ»¸ö±¾µØ±êÇ©£»
-ÃüÁîgit push origin :refs/tags/<tagname>¿ÉÒÔÉ¾³ıÒ»¸öÔ¶³Ì±êÇ©
+å‘½ä»¤git push origin <tagname>å¯ä»¥æ¨é€ä¸€ä¸ªæœ¬åœ°æ ‡ç­¾ï¼›
+å‘½ä»¤git push origin --tagså¯ä»¥æ¨é€å…¨éƒ¨æœªæ¨é€è¿‡çš„æœ¬åœ°æ ‡ç­¾ï¼›
+å‘½ä»¤git tag -d <tagname>å¯ä»¥åˆ é™¤ä¸€ä¸ªæœ¬åœ°æ ‡ç­¾ï¼›
+å‘½ä»¤git push origin :refs/tags/<tagname>å¯ä»¥åˆ é™¤ä¸€ä¸ªè¿œç¨‹æ ‡ç­¾
 
-ºöÂÔÄ³Ğ©ÎÄ¼şÊ±£¬ĞèÒª±àĞ´.gitignore£»
-.gitignoreÎÄ¼ş±¾ÉíÒª·Åµ½°æ±¾¿âÀï£¬²¢ÇÒ¿ÉÒÔ¶Ô.gitignore×ö°æ±¾¹ÜÀí
-Èç¹ûÄãÈ·ÊµÏëÌí¼Ó¸ÃÎÄ¼ş£¬¿ÉÒÔÓÃ-fÇ¿ÖÆÌí¼Óµ½Git£ºgit add -f App.class
+å¿½ç•¥æŸäº›æ–‡ä»¶æ—¶ï¼Œéœ€è¦ç¼–å†™.gitignoreï¼›
+.gitignoreæ–‡ä»¶æœ¬èº«è¦æ”¾åˆ°ç‰ˆæœ¬åº“é‡Œï¼Œå¹¶ä¸”å¯ä»¥å¯¹.gitignoreåšç‰ˆæœ¬ç®¡ç†
+å¦‚æœä½ ç¡®å®æƒ³æ·»åŠ è¯¥æ–‡ä»¶ï¼Œå¯ä»¥ç”¨-få¼ºåˆ¶æ·»åŠ åˆ°Gitï¼šgit add -f App.class
 
-±ğÃûgit config --global alias.co checkout
+åˆ«ågit config --global alias.co checkout
 git config --global alias.last 'log -1'
-µ±Ç°ÓÃ»§µÄGitÅäÖÃÎÄ¼ş·ÅÔÚÓÃ»§Ö÷Ä¿Â¼ÏÂµÄÒ»¸öÒş²ØÎÄ¼ş.gitconfigÖĞ
+å½“å‰ç”¨æˆ·çš„Gité…ç½®æ–‡ä»¶æ”¾åœ¨ç”¨æˆ·ä¸»ç›®å½•ä¸‹çš„ä¸€ä¸ªéšè—æ–‡ä»¶.gitconfigä¸­
 
-git fetch origin´ÓÔ¶¶ËµÄÔ´²Ö¿â¸üĞÂµ½±¾µØµÄ´úÂë²Ö¿â
+git fetch originä»è¿œç«¯çš„æºä»“åº“æ›´æ–°åˆ°æœ¬åœ°çš„ä»£ç ä»“åº“
+
+æˆ‘å¿˜è®°äº†ï¼Œé¢
