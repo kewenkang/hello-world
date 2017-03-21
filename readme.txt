@@ -66,4 +66,4 @@ git config --global alias.last 'log -1'
 
 git fetch origin从远端的源仓库更新到本地的代码仓库
 
-我忘记了，额
+我忘记了，额。好好复习一下git的使用。
